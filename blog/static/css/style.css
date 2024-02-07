@@ -1,0 +1,289 @@
+/* Importar iconos */
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    /* formato para diferentes navegadores */
+    src: url('fonts/websymbols-regular-webfont.eot') format('embedded-opentype'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 16px;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Barra de navegacion */
+/* ############################################## */
+/* ############################################## */
+/* ############################################## */
+.fixed-nav {
+    width: 100%;
+    height: 70px;
+}
+.navbar-collapse {
+    border-radius: 15px;
+    box-shadow: 2px 0 3px black;
+    background-color: #F3F3F3;
+}
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #F3F3F3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    /* Anclar barra */
+    position: fixed;
+}
+
+
+.nav-item {
+    margin: 0 2rem;
+}
+
+.nav-link {
+    color: #001C4C;
+}
+
+.nav-link:hover {
+    border-bottom: 4px solid red;
+}
+
+/* Fin barra de navegacion */
+
+
+/* ################################################################## */
+/* ################################################################## */
+/* ################################################################## */
+
+/* Inicio landig page */
+/* Div Content */
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    background: rgb(42,93,255);
+    background: linear-gradient(0deg, rgba(42,93,255,0.9529061624649859) 0%, rgba(12,80,228,1) 70%);
+}
+
+ /* Div description */
+
+
+.cubo {
+    width: 95%;
+    height: 30em;
+    display: flex;
+    margin: 0px auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.cubo-img{
+    text-align: center;
+}
+.cubo-img img {
+    width: 80%;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+.cubo h2 {
+    font-size: 35px;
+}
+
+.cubo p {
+    font-size: 15px;
+}
+
+/* Div que contiene imagen */
+.content-img {
+    width: 100%;
+}
+
+.landing-page-img {
+    /* width: 100%; */
+    padding: 0px;
+}
+
+.landing-page-img img {
+    width: 100%;
+    border-radius: 0px;
+}
+
+/* ################################################################## */
+/* ################################################################## */
+/* ################################################################## */
+
+/* Articles */
+.articles{
+    width: 100%;
+}
+
+.article-none{
+    width: 90%;
+    padding: 30px;
+    margin: 0 auto;
+    
+}
+
+.article-none h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 20px;
+    color: #001C4C;
+}
+
+.article-none p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+/* Article-par */
+.article-par{
+    width: 90%;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #F3F3F3;
+    box-shadow: 3px 3px 3px #666;
+}
+
+.article-par h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 20px;
+    color: #008F39;
+}
+
+.article-par p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+
+/* ################################################################## */
+/* ################################################################## */
+/* ################################################################## */
+
+/* Footer */
+footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    background-color: #333;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 5px #666;
+    margin-top: 20px;
+}
+
+
+/* footer redes sociales */
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social i{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 5px 10px;
+}
+
+
+
+/* ############################################################## */
+/* ############################################################## */
+/* ############################################################## */
+
+
+@media (min-width: 890px){
+    .navbar-collapse {
+    border-radius: 15px;
+    box-shadow: none;
+    background-color: #F3F3F3;
+    }
+    .navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #F3F3F3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    /* Anclar barra */
+    position: fixed;
+    }
+
+
+    .nav-item {
+        margin: 0 2rem;
+    }
+
+    .nav-link {
+        color: #001C4C;
+    }
+
+    .nav-link:hover {
+        color: red;
+    }
+
+
+
+    .hero{
+        display: flex;
+        flex-direction: row;
+        height: 40em;
+        justify-content: center;
+        align-items: center;
+    }
+    .cubo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .content-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-page-img{
+        width: 30em;
+        padding: 15px 15px;
+    }
+    .landing-page-img img{
+        border-radius: 15px;
+    }
+}
