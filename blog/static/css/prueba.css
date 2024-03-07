@@ -80,7 +80,7 @@ ul {
 
 /* Inicio landig page */
 /* Div Content */
-.hero {
+.main {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -273,7 +273,7 @@ footer{
 
 
 
-    .hero{
+    .main{
         display: flex;
         flex-direction: row;
         height: 40em;
